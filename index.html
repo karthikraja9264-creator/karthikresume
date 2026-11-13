@@ -1,0 +1,1962 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=022f9bff-66a5-460b-b201-56039734a0b7
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthik Raja | Digital Marketing Portfolio</title>
+<meta name="description" content="Karthik Raja's professional portfolio showcasing digital marketing, SEO, LinkedIn marketing, lead generation and business development.">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+ --bg:#f6f3ed;
+ --dark:#171714;
+ --orange:#fa6338;
+ --white:#fff;
+ --grey:#77756e;
+ --line:#dedbd3;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ font-family:'DM Sans',sans-serif;
+ background:var(--bg);
+ color:var(--dark);
+ line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:88%;max-width:1200px;margin:auto}
+
+header{
+ position:sticky;top:0;z-index:100;
+ background:rgba(246,243,237,.95);
+ border-bottom:1px solid var(--line);
+ backdrop-filter:blur(12px);
+}
+nav{
+ height:76px;display:flex;
+ align-items:center;justify-content:space-between;
+}
+.logo{font-size:24px;font-weight:800}
+.logo span{color:var(--orange)}
+.nav-links{display:flex;gap:25px}
+.nav-links a{font-size:12px;font-weight:700}
+.nav-links a:hover{color:var(--orange)}
+.menu{display:none;font-size:23px;cursor:pointer}
+
+.hero{padding:90px 0 100px}
+.hero-grid{
+ display:grid;grid-template-columns:1.2fr .8fr;
+ align-items:center;gap:70px;
+}
+.eyebrow{
+ font-size:12px;font-weight:800;
+ letter-spacing:3px;color:var(--orange);
+}
+.hero h1{
+ font-family:'Playfair Display',serif;
+ font-size:clamp(50px,7vw,90px);
+ line-height:1.06;margin:22px 0;
+ letter-spacing:-3px;
+}
+.hero h1 span{color:var(--orange)}
+.hero-desc{font-size:16px;color:var(--grey);max-width:560px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{
+ display:inline-block;padding:14px 24px;
+ background:var(--dark);color:white;
+ font-size:12px;font-weight:700;
+ border-radius:4px;transition:.3s;
+}
+.btn:hover{background:var(--orange);transform:translateY(-3px)}
+.btn.outline{background:transparent;color:var(--dark);border:1px solid var(--dark)}
+.btn.outline:hover{background:var(--orange);color:white;border-color:var(--orange)}
+
+.hero-image{position:relative}
+.photo-frame{
+ height:440px;max-width:380px;margin:auto;
+ background:#e4d8c8;position:relative;
+ border-radius:180px 180px 12px 12px;
+ overflow:hidden;
+}
+.photo-frame img{
+ width:100%;height:100%;object-fit:cover;
+}
+.photo-placeholder{
+ position:absolute;inset:0;
+ display:flex;align-items:center;justify-content:center;
+ flex-direction:column;color:#8d8172;
+ font-size:14px;text-align:center;padding:25px;
+}
+.photo-placeholder i{font-size:65px;margin-bottom:15px}
+.photo-frame img[src="profile.jpg"]{position:relative;z-index:2}
+
+.stamp{
+ position:absolute;bottom:30px;left:-35px;
+ background:var(--orange);color:white;
+ padding:18px 22px;font-weight:800;
+ transform:rotate(-5deg);z-index:3;
+}
+
+section{padding:85px 0}
+.section-head{margin-bottom:40px}
+.section-head small{
+ color:var(--orange);font-weight:800;
+ letter-spacing:3px;font-size:11px;
+}
+.section-head h2{
+ font-family:'Playfair Display',serif;
+ font-size:46px;line-height:1.2;margin-top:10px;
+}
+.section-head p{color:var(--grey);margin-top:12px}
+
+.about-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:50px;
+}
+.about-text p{color:var(--grey);margin-bottom:17px}
+.stats{
+ display:grid;grid-template-columns:1fr 1fr;gap:15px;
+}
+.stat{
+ background:white;padding:25px;
+ border:1px solid var(--line);
+}
+.stat h3{font-size:30px;color:var(--orange)}
+.stat p{font-size:12px;color:var(--grey)}
+
+.dark-section{background:var(--dark);color:white}
+.dark-section .section-head p{color:#aaa}
+.services-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+}
+.service{
+ border:1px solid #383832;padding:30px;
+ min-height:190px;transition:.3s;
+}
+.service:hover{background:#292923;transform:translateY(-5px)}
+.service i{font-size:28px;color:var(--orange)}
+.service h3{font-size:18px;margin:18px 0 8px}
+.service p{font-size:13px;color:#aaa}
+
+.experience{
+ border-left:2px solid var(--orange);
+ margin-left:12px;padding-left:30px;
+}
+.exp-item{position:relative;margin-bottom:40px}
+.exp-item:before{
+ content:"";position:absolute;left:-38px;top:8px;
+ width:13px;height:13px;border-radius:50%;
+ background:var(--orange);
+}
+.exp-item .date{font-size:11px;color:var(--orange);font-weight:800}
+.exp-item h3{font-size:21px;margin:7px 0}
+.exp-item h4{font-size:13px;color:var(--grey);margin-bottom:12px}
+.exp-item p,.exp-item li{font-size:13px;color:var(--grey)}
+.exp-item ul{padding-left:20px;margin-top:10px}
+
+.skills-grid{
+ display:grid;grid-template-columns:repeat(2,1fr);gap:25px;
+}
+.skill-box{
+ padding:28px;background:white;border:1px solid var(--line);
+}
+.skill-box h3{font-size:18px;margin-bottom:17px}
+.skill-box h3 i{color:var(--orange);margin-right:10px}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tags span{
+ padding:8px 13px;background:var(--bg);
+ font-size:11px;font-weight:700;border:1px solid var(--line);
+ border-radius:3px;
+}
+
+.tools-grid{
+ display:grid;grid-template-columns:repeat(4,1fr);gap:15px;
+}
+.tool{
+ padding:20px 12px;text-align:center;
+ background:white;border:1px solid var(--line);
+ transition:.3s;
+}
+.tool:hover{border-color:var(--orange);transform:translateY(-4px)}
+.tool i{font-size:28px;color:var(--orange);margin-bottom:10px}
+.tool h4{font-size:12px}
+
+.project-grid{
+ display:grid;grid-template-columns:repeat(2,1fr);gap:25px;
+}
+.project{
+ background:white;border:1px solid var(--line);
+ overflow:hidden;
+}
+.project-cover{
+ min-height:220px;background:#e9dfd1;
+ display:flex;align-items:center;justify-content:center;
+ font-size:55px;color:var(--orange);
+}
+.project-info{padding:25px}
+.project-info small{color:var(--orange);font-weight:800}
+.project-info h3{font-size:21px;margin:9px 0}
+.project-info p{font-size:13px;color:var(--grey)}
+
+.cta{
+ background:var(--orange);padding:65px 30px;
+ text-align:center;color:white;
+}
+.cta h2{
+ font-family:'Playfair Display',serif;
+ font-size:43px;
+}
+.cta p{margin:15px auto 25px;max-width:600px}
+.cta .btn{background:var(--dark)}
+
+.contact-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:35px;
+}
+.contact-info p{color:var(--grey);margin:12px 0}
+.contact-link{
+ display:block;padding:13px 0;border-bottom:1px solid var(--line);
+ font-size:14px;font-weight:700;
+}
+.contact-link i{color:var(--orange);margin-right:12px}
+
+footer{
+ padding:28px 0;text-align:center;
+ border-top:1px solid var(--line);
+ color:var(--grey);font-size:12px;
+}
+
+@media(max-width:800px){
+ .nav-links{
+  display:none;position:absolute;top:76px;left:0;
+  width:100%;background:var(--bg);
+  padding:25px;flex-direction:column;
+ }
+ .nav-links.active{display:flex}
+ .menu{display:block}
+ .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .hero{text-align:center}
+ .hero-desc{margin:auto}
+ .hero-actions{justify-content:center}
+ .hero-image{margin-top:30px}
+ .photo-frame{height:360px}
+ .services-grid{grid-template-columns:1fr 1fr}
+ .skills-grid{grid-template-columns:1fr}
+ .tools-grid{grid-template-columns:repeat(3,1fr)}
+ .project-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+ .services-grid{grid-template-columns:1fr}
+ .tools-grid{grid-template-columns:repeat(2,1fr)}
+ .section-head h2{font-size:35px}
+ .hero h1{font-size:48px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="container">
+  <nav>
+   <a href="#home" class="logo">KARTHIK<span>.</span></a>
+   <div class="nav-links" id="nav">
+    <a href="#about">ABOUT</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#services">SERVICES</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#tools">TOOLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#performance">PERFORMANCE</a>
+    <a href="#certification">CERTIFICATION</a>
+    <a href="#contact">CONTACT</a>
+   </div>
+   <div class="menu" onclick="document.getElementById('nav').classList.toggle('active')">
+    <i class="fas fa-bars"></i>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">DIGITAL MARKETING PORTFOLIO · 2026</div>
+   <h1>Ideas into<br><span>Digital Impact.</span></h1>
+   <p class="hero-desc">
+    Hi, I'm <b>KARTHIK RAJA M </b>. a Digital Marketing Executive specializing in SEO, LinkedIn Marketing, Social Media Marketing, Content Strategy, and B2B Lead Generation. I help businesses strengthen their online presence, reach the right audience, and turn digital strategies into measurable business opportunities.
+   </p>
+   <div class="hero-actions">
+    <a href="#projects" class="btn">VIEW MY WORK ↗</a>
+    <a href="#contact" class="btn outline">LET'S CONNECT</a>
+   </div>
+  </div>
+
+  <div class="hero-image">
+   <div class="photo-frame">
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQEyql7EhTTrvg/profile-displayphoto-scale_400_400/B56aGu4S0TJYAo-/0/1793935356173?e=1796256000&v=beta&t=u-xwVfz8jh1-SOpYqwDAIq-CPwfTc0LIVIkprQFtvJM"
+         onerror="this.style.display='none'">
+    <div class="">
+     <i class="fas fa-user-circle"></i>
+    </div>
+   </div>
+   <div class="stamp">CREATIVE THINKER<br>MARKETING STRATEGIST</div>
+  </div>
+ </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+ <div class="container">
+  <div class="section-head">
+   <small>01 / ABOUT ME</small>
+   <h2>Marketing with<br>Purpose & Strategy.</h2>
+  </div>
+  <div class="about-grid">
+   <div class="about-text">
+    <p>
+     Hi, I'm Karthik Raja M, a Digital Marketing professional passionate about building brands, improving online visibility, and creating meaningful digital experiences.
+    </p>
+    <p>
+     I specialize in Search Engine Optimization (SEO), LinkedIn Marketing, Social Media Marketing, Content Strategy, and B2B Lead Generation. I enjoy combining creativity with data-driven strategies to help businesses reach their target audiences, strengthen their digital presence, and generate valuable business opportunities.
+    </p>
+    <p>
+    Through my work with digital marketing and automotive technology projects, I have gained practical experience in website optimization, keyword research, competitor analysis, LinkedIn outreach, content creation, and business development.
+    </p>
+    <p>
+     I believe successful digital marketing is more than just gaining clicks and impressions - it's about building trust, connecting with the right audience, and delivering measurable results.
+    </p>
+   </div>
+   <div class="stats">
+    <div class="stat"><h3>SEO</h3><p>Organic visibility</p></div>
+    <div class="stat"><h3>B2B</h3><p>Business marketing</p></div>
+    <div class="stat"><h3>Social</h3><p>Audience engagement</p></div>
+    <div class="stat"><h3>Leads</h3><p>Lead generation</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="education-section" id="education">
+  <div class="education-container">
+
+    <div class="edu-label">02 / EDUCATION</div>
+
+    <div class="edu-heading">
+      <h2>Learning. Growing. <span>Achieving.</span></h2>
+      <p>
+        My academic journey has built a strong foundation
+        in business management, marketing and digital strategy.
+      </p>
+    </div>
+
+    <div class="education-timeline">
+
+      <!-- MBA -->
+      <div class="education-card">
+        <div class="edu-year">2022 — 2024</div>
+
+        <div class="edu-content">
+          <div class="edu-logo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D560BAQERsnzPaMdO7A/company-logo_100_100/company-logo_100_100/0/1706685077186?e=1796256000&v=beta&t=vsW5c7TBdwi_8HYuJYP2nzl_V6_2MB8RmxVfUFZH6vg"
+              alt="RVS CAS MBA Logo">
+          </div>
+
+          <div class="edu-details">
+            <span class="edu-degree">POSTGRADUATE</span>
+            <h3>Master of Business Administration</h3>
+            <h4>Digital Marketing</h4>
+            <a href="https://www.linkedin.com/school/15095513/"
+               target="_blank">
+              RVS CAS MBA ↗
+            </a>
+            <p>January 2022 – May 2024</p>
+          </div>
+
+          <div class="edu-grade">A</div>
+        </div>
+      </div>
+
+      <!-- BBA -->
+      <div class="education-card">
+        <div class="edu-year">2017 — 2020</div>
+
+        <div class="edu-content">
+          <div class="edu-logo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D560BAQEZE4Z0jpQ24Q/company-logo_100_100/company-logo_100_100/0/1689228507490?e=1796256000&v=beta&t=ZmATa7pAqfakakTeTQcNN9YZUA6sSgnOnbb0ZxPn-b0"
+              alt="RVS Group of Institutions Logo">
+          </div>
+
+          <div class="edu-details">
+            <span class="edu-degree">UNDERGRADUATE</span>
+            <h3>Bachelor of Business Administration</h3>
+            <h4>BBA</h4>
+            <a href="https://www.linkedin.com/school/96115882/"
+               target="_blank">
+              RVS Group of Institutions, Coimbatore ↗
+            </a>
+            <p>June 2017 – May 2020</p>
+          </div>
+
+          <div class="edu-grade second-class">2nd Class</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.education-section {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  padding: 100px 7%;
+}
+
+.education-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.edu-label {
+  color: #FF6B00;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.edu-heading {
+  margin: 30px 0 55px;
+  max-width: 700px;
+}
+
+.edu-heading h2 {
+  font-size: clamp(34px, 5vw, 55px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.edu-heading h2 span {
+  color: #FF6B00;
+}
+
+.edu-heading p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+.education-timeline {
+  border-left: 2px solid #FF6B00;
+  padding-left: 30px;
+}
+
+.education-card {
+  position: relative;
+  background: #171717;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 25px;
+  transition: .3s ease;
+}
+
+.education-card:hover {
+  border-color: #FF6B00;
+  transform: translateX(5px);
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 35px;
+  width: 12px;
+  height: 12px;
+  background: #FF6B00;
+  border: 4px solid #0A0A0A;
+  border-radius: 50%;
+}
+
+.edu-year {
+  color: #FF6B00;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.edu-content {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.edu-logo {
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.edu-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edu-details {
+  flex: 1;
+}
+
+.edu-degree {
+  color: #FF6B00;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.edu-details h3 {
+  font-size: 19px;
+  margin: 10px 0 5px;
+}
+
+.edu-details h4 {
+  color: #CCCCCC;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.edu-details a {
+  color: #FF6B00;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.edu-details p {
+  color: #888;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.edu-grade {
+  background: #FF6B00;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 12px 17px;
+  border-radius: 6px;
+}
+
+.edu-grade.second-class {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+@media(max-width: 650px) {
+  .education-section {
+    padding: 70px 6%;
+  }
+
+  .education-timeline {
+    padding-left: 20px;
+  }
+
+  .education-card {
+    padding: 20px;
+  }
+
+  .education-card::before {
+    left: -28px;
+  }
+
+  .edu-content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .edu-logo {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+  }
+
+  .edu-details {
+    min-width: 170px;
+  }
+
+  .edu-grade {
+    margin-left: 70px;
+  }
+}
+</style>
+
+
+<!-- SERVICES -->
+<section class="dark-section" id="services">
+ <div class="container">
+  <div class="section-head">
+   <small>03 / WHAT I DO</small>
+   <h2>Marketing Expertise.</h2>
+   <p>Core marketing areas and professional capabilities.</p>
+  </div>
+  <div class="services-grid">
+   <div class="service">
+    <i class="fas fa-magnifying-glass"></i>
+    <h3>Search Engine Optimization</h3>
+    <p>Keyword research, on-page SEO, technical SEO, content optimization and local SEO.</p>
+   </div>
+   <div class="service">
+    <i class="fab fa-linkedin"></i>
+    <h3>LinkedIn Marketing</h3>
+    <p>Professional branding, B2B outreach, content strategy and decision-maker engagement.</p>
+   </div>
+   <div class="service">
+    <i class="fas fa-bullhorn"></i>
+    <h3>Social Media Marketing</h3>
+    <p>Social content planning, brand visibility, audience engagement and campaign management.</p>
+   </div>
+   <div class="service">
+    <i class="fas fa-users"></i>
+    <h3>Lead Generation</h3>
+    <p>Prospect research, lead qualification, business outreach and follow-up strategies.</p>
+   </div>
+   <div class="service">
+    <i class="fas fa-pen-nib"></i>
+    <h3>Content Marketing</h3>
+    <p>Website content, blogs, newsletters, captions and marketing communication.</p>
+   </div>
+   <div class="service">
+    <i class="fas fa-chart-line"></i>
+    <h3>Digital Campaigns</h3>
+    <p>Campaign planning, performance monitoring and marketing optimization.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+ <div class="container">
+  <div class="section-head">
+   <small>04 / CAREER JOURNEY</small>
+   <h2>Work Experience.</h2>
+   <p>Professional responsibilities and industry exposure.</p>
+  </div>
+
+  <div class="experience">
+   <div class="exp-item">
+    <div class="date">CURRENT / January 2026 – Present | Coimbatore, Tamil Nadu, India</div>
+    <h3>Digital Marketing Executive</h3>
+    <h4>AppsInai Private Limited | Full-Time</h4>
+    <p>Working as a Digital Marketing Executive, focusing on strengthening the company's online presence, improving website visibility, generating business leads, and implementing digital marketing strategies.</p>
+    <p>Key Responsibilities & Achievements</p>
+    <ul>
+     <li style="margin-bottom: 12px;"><strong>Search Engine Optimization (SEO):</strong> Conduct keyword research, on-page SEO, off-page SEO, and website optimization to improve organic search visibility.</li>
+
+<li style="margin-bottom: 12px;"><strong>Website Optimization:</strong> Optimize website content, meta titles, meta descriptions, landing pages, and internal linking.</li>
+
+<li style="margin-bottom: 12px;"><strong>Social Media Marketing:</strong> Plan and manage social media content across LinkedIn, Instagram, and Facebook to increase brand awareness and audience engagement.</li>
+
+<li style="margin-bottom: 12px;"><strong>LinkedIn Marketing:</strong> Develop B2B marketing strategies, identify decision-makers, and execute targeted outreach campaigns.</li>
+
+<li style="margin-bottom: 12px;"><strong>Content Marketing:</strong> Create SEO-friendly website content, blog articles, social media posts, and promotional content.</li>
+
+<li style="margin-bottom: 12px;"><strong>Competitor Analysis:</strong> Research competitors, analyze their digital strategies, and identify opportunities to improve marketing performance.</li>
+
+<li style="margin-bottom: 12px;"><strong>Analytics & Reporting:</strong> Monitor website traffic, keyword rankings, search performance, and campaign engagement using digital marketing tools.</li>
+
+<li style="margin-bottom: 12px;"><strong>Lead Generation:</strong> Research potential clients, identify business opportunities, and generate relevant B2B prospects.</li>
+    </ul>
+   </div>
+   <div class="exp-item">
+    <div class="date">December 2024 – December 2025 · 1 Year 1 Month
+Coimbatore, Tamil Nadu, India · On-site</div>
+    <h3>Search Engine Optimization Analyst</h3>
+    <h4>ICore Software Technologies | Full-Time</h4>
+    <p>Worked as an SEO Analyst, focusing on improving website search engine rankings, increasing organic traffic, conducting keyword research, and implementing SEO strategies to strengthen online visibility.</p>
+    <p>Key Responsibilities</p>
+    <ul>
+     <li style="margin-bottom: 12px;"><strong>Keyword Research:</strong> Identified high-potential keywords using search volume, keyword difficulty, and competitor analysis.</li>
+
+<li style="margin-bottom: 12px;"><strong>On-Page SEO:</strong> Optimized title tags, meta descriptions, headings, URLs, internal links, and website content.</li>
+
+<li style="margin-bottom: 12px;"><strong>Off-Page SEO:</strong> Worked on backlink building, link-building strategies, and website authority improvement.</li>
+
+<li style="margin-bottom: 12px;"><strong>Technical SEO:</strong> Conducted website audits, identified crawling and indexing issues, and supported technical SEO improvements.</li>
+
+<li style="margin-bottom: 12px;"><strong>Competitor Analysis:</strong> Analyzed competitor websites, keyword strategies, backlinks, and search engine performance.</li>
+
+<li style="margin-bottom: 12px;"><strong>Content Optimization:</strong> Optimized website pages and blog content based on SEO best practices and search intent.</li>
+
+<li style="margin-bottom: 12px;"><strong>Local SEO:</strong> Worked on local keyword research and Google Business Profile optimization.</li>
+
+<li style="margin-bottom: 12px;"><strong>SEO Audits:</strong> Monitored website health and identified opportunities to improve organic search performance.</li>
+
+<li style="margin-bottom: 12px;"><strong>Performance Tracking:</strong> Used Google Analytics and Google Search Console to monitor organic traffic, keyword performance, impressions, and clicks.</li>
+
+<li style="margin-bottom: 12px;"><strong>SEO Reporting:</strong> Prepared SEO performance reports and tracked optimization progress.</li>
+    </ul>
+   </div>
+      <div class="exp-item">
+    <div class="date">May 2024 – November 2024 · 7 Months
+Coimbatore, Tamil Nadu, India · On-site</div>
+    <h3>Digital Marketing Executive</h3>
+    <h4>Srikesh InfoTech | Full-Time</h4>
+    <p>Worked as a Digital Marketing Executive, supporting online brand visibility, website promotion, social media engagement, and digital marketing activities to strengthen the company's online presence.</p>
+    <p>Key Responsibilities & Achievements</p>
+    <ul>
+     <li style="margin-bottom: 12px;"><strong>Search Engine Optimization (SEO):</strong> Conducted keyword research and implemented basic on-page and off-page SEO strategies to improve website visibility.</li>
+
+<li style="margin-bottom: 12px;"><strong>Social Media Marketing:</strong> Managed social media activities and supported content publishing across platforms such as Facebook, Instagram, and LinkedIn.</li>
+
+<li style="margin-bottom: 12px;"><strong>Content Creation:</strong> Created engaging social media posts, promotional content, and marketing captions to improve audience engagement.</li>
+
+<li style="margin-bottom: 12px;"><strong>Website Optimization:</strong> Updated website content, optimized meta titles and descriptions, and improved basic SEO elements.</li>
+
+<li style="margin-bottom: 12px;"><strong>Keyword Research:</strong> Identified relevant keywords based on business services, audience interests, and search trends.</li>
+
+<li style="margin-bottom: 12px;"><strong>Competitor Analysis:</strong> Researched competitor websites and social media activities to identify marketing opportunities.</li>
+
+<li style="margin-bottom: 12px;"><strong>Lead Generation:</strong> Supported online prospect research and digital marketing activities to identify potential business opportunities.</li>
+
+<li style="margin-bottom: 12px;"><strong>Campaign Management:</strong> Assisted with planning and executing digital marketing campaigns.</li>
+
+<li style="margin-bottom: 12px;"><strong>Performance Monitoring:</strong> Tracked social media engagement and website performance to understand campaign effectiveness.</li>
+    </ul>
+   </div>
+      <div class="exp-item">
+    <div class="date">June 2023 – July 2023 · 2 Months
+Chennai, Tamil Nadu, India · Remote</div>
+    <h3>Digital Marketing Intern</h3>
+    <h4>Oriana Information Technologies LLP. | Internship</h4>
+    <p>Completed a Digital Marketing Internship, gaining practical exposure to digital marketing strategies, search engine optimization, social media management, keyword research, and online brand promotion.</p>
+    <p>Key Responsibilities & Learning Experiences</p>
+    <ul>
+    <li style="margin-bottom: 12px;"><strong>SEO Fundamentals:</strong> Learned keyword research, search engine optimization techniques, and website visibility improvement strategies.</li>
+
+<li style="margin-bottom: 12px;"><strong>Keyword Research:</strong> Researched relevant keywords to understand search trends and audience interests.</li>
+
+<li style="margin-bottom: 12px;"><strong>On-Page SEO:</strong> Gained practical knowledge of meta titles, meta descriptions, heading tags, and content optimization.</li>
+
+<li style="margin-bottom: 12px;"><strong>Social Media Marketing:</strong> Supported social media content planning and promotional activities.</li>
+
+<li style="margin-bottom: 12px;"><strong>Content Creation:</strong> Assisted in creating engaging digital content for online platforms.</li>
+
+<li style="margin-bottom: 12px;"><strong>Competitor Research:</strong> Analyzed competitor websites and digital marketing strategies.</li>
+
+<li style="margin-bottom: 12px;"><strong>Digital Marketing Research:</strong> Explored digital marketing trends, tools, and techniques to understand online business promotion.</li>
+
+<li style="margin-bottom: 12px;"><strong>Campaign Support:</strong> Gained exposure to planning and executing digital marketing activities.</li>
+    </ul>
+   </div>
+      <div class="exp-item">
+    <div class="date">June 2022 – August 2022 · 3 Months
+Coimbatore, Tamil Nadu, India · On-site</div>
+    <h3>Digital Marketing Intern</h3>
+    <h4>Nextskill Technologies | Internship</h4>
+    <p>Completed a Digital Marketing Internship, gaining foundational knowledge and practical exposure to online marketing strategies, SEO techniques, social media promotion, and digital brand development.</p>
+    <p>Key Responsibilities & Learning Experiences</p>
+    <ul>
+   <li style="margin-bottom: 12px;"><strong>Digital Marketing Fundamentals:</strong> Learned the fundamentals of digital marketing and online business promotion.</li>
+
+<li style="margin-bottom: 12px;"><strong>Search Engine Optimization (SEO):</strong> Gained introductory knowledge of SEO techniques to improve website visibility on search engines.</li>
+
+<li style="margin-bottom: 12px;"><strong>Keyword Research:</strong> Explored keyword research methods to identify relevant search terms and audience interests.</li>
+
+<li style="margin-bottom: 12px;"><strong>Social Media Marketing:</strong> Learned social media promotion strategies for increasing brand awareness and engagement.</li>
+
+<li style="margin-bottom: 12px;"><strong>Content Creation:</strong> Assisted with creating digital content for social media and online marketing activities.</li>
+
+<li style="margin-bottom: 12px;"><strong>Competitor Analysis:</strong> Researched competitor websites and their online marketing approaches.</li>
+
+<li style="margin-bottom: 12px;"><strong>Website Analysis:</strong> Explored website structure, content optimization, and basic SEO practices.</li>
+
+<li style="margin-bottom: 12px;"><strong>Digital Marketing Research:</strong> Learned about marketing trends, online platforms, and tools used in digital marketing.</li>
+    </ul>
+   </div>
+      <div class="exp-item">
+    <div class="date">May 2021 – January 2022 · 9 Months</div>
+    <h3>Packaging Specialist</h3>
+    <h4>Alstom | Full-Time</h4>
+    <p>Worked as a Packaging Specialist, supporting packaging-related operations and ensuring products and materials were properly prepared, protected, and organized for handling, storage, and transportation.</p>
+    <p>Key Responsibilities</p>
+    <ul>
+    <li style="margin-bottom: 12px;"><strong>Packaging Operations:</strong> Supported day-to-day packaging activities while following operational requirements.</li>
+
+<li style="margin-bottom: 12px;"><strong>Packaging Quality:</strong> Ensured packaging materials and finished packages met quality and safety standards.</li>
+
+<li style="margin-bottom: 12px;"><strong>Material Handling:</strong> Assisted with organizing and handling materials for packaging operations.</li>
+
+<li style="margin-bottom: 12px;"><strong>Documentation:</strong> Maintained packaging-related records and operational documentation.</li>
+
+<li style="margin-bottom: 12px;"><strong>Process Coordination:</strong> Coordinated with internal teams to support smooth packaging workflows.</li>
+
+<li style="margin-bottom: 12px;"><strong>Quality & Safety:</strong> Followed workplace safety procedures and packaging guidelines.</li>
+
+<li style="margin-bottom: 12px;"><strong>Process Improvement:</strong> Supported efforts to improve packaging efficiency and reduce material wastage.</li>
+    </ul>
+   </div>
+
+ </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+ <div class="container">
+  <div class="section-head">
+   <small>05 / MY CAPABILITIES</small>
+   <h2>Skills & Knowledge.</h2>
+  </div>
+  <div class="skills-grid">
+   <div class="skill-box">
+    <h3><i class="fas fa-search"></i> Search Engine Optimization</h3>
+    <div class="tags">
+     <span>Keyword Research</span><span>On-Page SEO</span>
+     <span>Technical SEO</span><span>Off-Page SEO</span>
+     <span>Local SEO</span><span>Schema Markup</span>
+     <span>Competitor Analysis</span><span>Content Optimization</span>
+     <span>Website SEO Audits</span>
+    </div>
+   </div>
+   <div class="skill-box">
+    <h3><i class="fas fa-share-nodes"></i> Content & Website Optimization</h3>
+    <div class="tags">
+     <span>SEO Content Writing</span><span>Website Content Optimization</span>
+     <span>Meta Title & Description</span><span>Landing Page Optimization</span>
+     <span>Blog Writing</span><span>Social Media Content Creation</span>
+    </div>
+   </div>
+   <div class="skill-box">
+    <h3><i class="fas fa-chart-pie"></i> Analytics & Research</h3>
+    <div class="tags">
+     <span>Google Analytics 4</span><span>Google Search Console</span>
+     <span>Keyword Performance Tracking</span><span>Website Traffic Analysis</span>
+     <span>Competitor Research</span><span>Campaign Performance Reporting</span>
+    </div>
+   </div>
+   <div class="skill-box">
+    <h3><i class="fas fa-handshake"></i> Digital Marketing</h3>
+    <div class="tags">
+     <span>Digital Marketing Strategy</span><span>Social Media Marketing</span>
+     <span>LinkedIn Marketing</span><span>B2B Lead Generation</span>
+     <span>Brand Awareness</span><span>Online Campaign Management</span>
+     <span>Content Marketing</span><span>Email Marketing</span>
+    </div>
+    </div>
+   <div class="skill-box">
+    <h3><i class="fas fa-share-nodes"></i> Tools & Platforms</h3>
+    <div class="tags">
+     <span>Google Analytics 4</span><span>Google Search Console</span>
+     <span>Google Keyword Planner</span><span>WordPress</span>
+     <span>Ahrefs</span><span>Screaming Frog</span>
+     <span>Canva</span><span>LinkedIn Campaign Manager</span>
+     <span>Rank Math SEO</span><span>SEMrush</span>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- TOOLS -->
+
+<section class="toolkit-section" id="tools">
+  <div class="toolkit-container">
+
+    <div class="section-label">06 / MY TOOLKIT</div>
+
+    <h2>Tools &amp; Technologies<span>.</span></h2>
+
+    <p class="section-description">
+      The tools and technologies I use to build smarter digital marketing strategies.
+    </p>
+
+    <div class="tools-grid">
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googleanalytics/FFFFFF" alt="Google Analytics">
+        <h3>Google Analytics 4</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googlesearchconsole/FFFFFF" alt="Google Search Console">
+        <h3>Google Search Console</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googleads/FFFFFF" alt="Google Ads">
+        <h3>Google Ads</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/wordpress/FFFFFF" alt="WordPress">
+        <h3>WordPress</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSpyXMdoj-VYPd_l56O9_xBUyt9s72A9HJ1WuLaBpgr_CiL-cg62y6rnW&s=10" alt="Rank Math">
+        <h3>Rank Math SEO</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1280px-LinkedIn_icon.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="LinkedIn">
+        <h3>LinkedIn</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdO_P4xTQ-4w5X45UapDZ4wSV61OScNxSk0KKKYx8kGaLPP9s6ekm1oEqg&s=10" alt="Google Business">
+        <h3>Google Business Profile</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://static.freepnglogo.com/images/all_img/1691829322canva-app-logo-png.png" alt="Canva">
+        <h3>Canva</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/mailchimp/FFFFFF" alt="Email Marketing">
+        <h3>Email Marketing</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googlesheets/FFFFFF" alt="Google Sheets">
+        <h3>Google Sheets</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://static.ahrefs.com/assets/img/og/ahrefs.png?v=2" alt="Ahrefs">
+        <h3>Ahrefs</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googledocs/FFFFFF" alt="Google Docs">
+        <h3>Google Docs</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt="Instagram">
+        <h3>Instagram</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://www.notebookcheck.net/fileadmin/_processed_/webp/Notebooks/News/_nc5/Chat-GPT-q82-w2560-h.webp" alt="ChatGPT">
+        <h3>ChatGPT</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/grammarly/FFFFFF" alt="Grammarly">
+        <h3>Grammarly</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="Facebook">
+        <h3>Facebook</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/meta/FFFFFF" alt="Meta">
+        <h3>Meta Business Suite</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googletagmanager/FFFFFF" alt="Google Tag Manager">
+        <h3>Google Tag Manager</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://www.google.com/s2/favicons?domain=screamingfrog.co.uk&sz=128"
+ alt="Screaming Frog">
+        <h3>Screaming Frog SEO</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/googleads/FFFFFF" alt="Keyword Planner">
+        <h3>Google Keyword Planner</h3>
+      </div>
+
+      <div class="tool-card">
+        <img src="https://cdn.simpleicons.org/semrush/FFFFFF" alt="SEMrush">
+        <h3>SEMrush</h3>
+      </div>
+
+    
+
+    </div>
+  </div>
+</section>
+
+<style>
+.toolkit-section {
+  background: #080808;
+  color: #ffffff;
+  padding: 100px 0;
+  font-family: inherit;
+}
+
+.toolkit-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-label {
+  color: #ff7900;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.toolkit-section h2 {
+  font-size: clamp(34px, 5vw, 55px);
+  font-weight: 750;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+
+.toolkit-section h2 span {
+  color: #ff7900;
+}
+
+.section-description {
+  color: #999999;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 45px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.tool-card {
+  background: #111111;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  min-height: 155px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.tool-card img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.tool-card h3 {
+  color: #eeeeee;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.tool-card:hover {
+  background: #19110b;
+  border-color: #ff7900;
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px rgba(255, 121, 0, 0.12);
+}
+
+.tool-card:hover img {
+  filter: none;
+  transform: scale(1.12);
+}
+
+.tool-card:hover h3 {
+  color: #ff7900;
+}
+
+@media (max-width: 900px) {
+  .tools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .toolkit-section {
+    padding: 65px 0;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .tool-card {
+    min-height: 125px;
+    padding: 18px 14px;
+  }
+
+  .tool-card h3 {
+    font-size: 13px;
+  }
+}
+</style>
+
+ </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+ <div class="container">
+  <div class="section-head">
+   <small>07 / SELECTED WORK</small>
+   <h2>Projects & Case Studies.</h2>
+   <p>Turning Marketing Strategies into Real-World Projects.</p>
+  </div>
+  <div class="project-grid">
+
+   <div class="project">
+    <div class="project-cover"><i class="fas fa-car"></i></div>
+    <div class="project-info">
+     <small>SEO | LinkedIn Marketing | B2B Lead Generation</small>
+     <h3>AutoTech360 – Automotive Technology Marketing</h3>
+     <p>
+      Project Overview:
+
+Worked on digital marketing initiatives for an automotive technology company offering dealer management systems, automotive CRM, fleet management, and custom automotive software solutions.
+
+My Contributions:
+
+Developed LinkedIn marketing strategies targeting automotive business owners and decision-makers.
+
+Researched CEOs, founders, directors, and automotive industry prospects.
+
+Created personalized LinkedIn outreach and follow-up messages.
+
+Worked on SEO keyword research and website content optimization.
+
+Planned LinkedIn polls and social media engagement campaigns.
+
+Researched competitors and identified marketing opportunities.
+
+Focus: Brand Awareness | B2B Marketing | Lead Generation
+     </p>
+    </div>
+   </div>
+
+   <div class="project">
+    <div class="project-cover"><i class="fas fa-search"></i></i></div>
+    <div class="project-info">
+     <small>Search Engine Optimization | Content Marketing</small>
+     <h3>AppsInai – AI & Technology SEO Marketing</h3>
+     <p>
+      Project Overview:
+
+Worked on digital marketing and SEO initiatives for an artificial intelligence and software development company.
+
+My Contributions:
+
+Conducted keyword research for AI and software development services.
+
+Optimized website pages, meta titles, and meta descriptions.
+
+Researched competitor websites and keyword opportunities.
+
+Developed SEO-focused website content strategies.
+
+Worked on technical SEO and structured data research.
+
+Identified opportunities to improve organic search visibility.
+
+Focus: Organic Growth | Search Visibility | Website Optimization
+     </p>
+    </div>
+   </div>
+
+   <div class="project">
+    <div class="project-cover"><i class="fas fa-chart-column"></i></div>
+    <div class="project-info">
+     <small>SEO | Technical SEO | Website Analysis</small>
+     <h3>ICore Software Technologies – SEO Optimization</h3>
+     <p>
+      Project Overview:
+
+Worked on search engine optimization activities to improve website visibility, strengthen keyword targeting, and support organic search performance.
+
+My Contributions:
+
+Conducted keyword research and competitor analysis.
+
+Implemented on-page and off-page SEO activities.
+
+Optimized website content and metadata.
+
+Identified technical SEO issues through website audits.
+
+Monitored website performance using Google Analytics and Google Search Console.
+
+Supported link-building and content optimization activities.
+
+Focus: Technical SEO | Organic Search | Website Performance
+     </p>
+    </div>
+   </div>
+
+   <div class="project">
+    <div class="project-cover"><i class="fas fa-bullhorn"></i></i></div>
+    <div class="project-info">
+     <small>Social Media Marketing | Content Strategy</small>
+     <h3>Social Media & LinkedIn Marketing Campaigns</h3>
+     <p>
+      Project Overview:
+
+Planned and developed social media marketing activities to improve brand awareness, audience engagement, and business communication.
+
+My Contributions:
+
+Created LinkedIn marketing content and engagement strategies.
+
+Developed industry-specific LinkedIn polls.
+
+Prepared social media captions and promotional content.
+
+Researched target audiences and business decision-makers.
+
+Planned content ideas around automotive technology and digital transformation.
+
+Focus: Audience Engagement | Brand Awareness | Content Marketing
+     </p>
+    </div>
+   </div>
+
+  </div>
+ </div>
+</section>
+
+<section class="results-section" id="achievements">
+  <div class="results-container">
+
+    <div class="results-label">08 / PERFORMANCE & RESULTS</div>
+
+    <div class="results-heading">
+      <h2>Real Growth. <span>Measurable Impact.</span></h2>
+      <p>
+        Measuring digital marketing success through data,
+        strategy and continuous optimization.
+      </p>
+    </div>
+
+    <div class="comparison-heading">
+      <h3>Before <span>vs</span> After</h3>
+      <p>Performance improvement through digital marketing</p>
+    </div>
+
+    <div class="comparison-grid" id="comparisonGrid"></div>
+
+  </div>
+</section>
+
+<style>
+.results-section {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  padding: 100px 7%;
+  font-family: inherit;
+}
+
+.results-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.results-label {
+  color: #FF6B00;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.results-heading {
+  margin: 30px 0 65px;
+}
+
+.results-heading h2 {
+  font-size: clamp(35px, 5vw, 60px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.results-heading h2 span {
+  color: #FF6B00;
+}
+
+.results-heading p,
+.comparison-heading p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+.comparison-heading {
+  margin-bottom: 30px;
+}
+
+.comparison-heading h3 {
+  font-size: 30px;
+}
+
+.comparison-heading h3 span {
+  color: #FF6B00;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.comparison-card {
+  background: #171717;
+  border: 1px solid #292929;
+  padding: 30px;
+  border-radius: 12px;
+  transition: .3s ease;
+}
+
+.comparison-card:hover {
+  border-color: #FF6B00;
+  transform: translateY(-5px);
+}
+
+.metric-title {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.metric-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.metric-box {
+  background: #202020;
+  padding: 18px;
+  border-radius: 7px;
+}
+
+.metric-box small {
+  display: block;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.metric-number {
+  font-size: 30px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.metric-box.after .metric-number {
+  color: #FF6B00;
+}
+
+.growth-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.growth-label {
+  color: #999;
+  font-size: 12px;
+}
+
+.growth-value {
+  color: #FF6B00;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.progress-track {
+  height: 6px;
+  background: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: #FF6B00;
+  border-radius: 20px;
+  transition: width 1.5s ease;
+}
+
+@media(max-width: 650px) {
+  .results-section {
+    padding: 70px 6%;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-heading h2 {
+    font-size: 36px;
+  }
+
+  .metric-number {
+    font-size: 25px;
+  }
+}
+</style>
+
+<script>
+const performanceData = [
+  {
+    title: "Organic Website Traffic",
+    before: 4000,
+    after: 14000,
+    suffix: "",
+    unit: "monthly visits"
+  },
+  {
+    title: "Google Search Impressions",
+    before: 15000,
+    after: 45000,
+    suffix: "",
+    unit: "impressions"
+  },
+  {
+    title: "Top 10 Keyword Rankings",
+    before: 25,
+    after: 65,
+    suffix: "",
+    unit: "keywords"
+  },
+  {
+    title: "Qualified Leads",
+    before: 20,
+    after: 60,
+    suffix: "",
+    unit: "leads"
+  },
+  {
+    title: "LinkedIn Engagement",
+    before: 2,
+    after: 5,
+    suffix: "%",
+    unit: "engagement rate"
+  },
+  {
+    title: "Website Conversions",
+    before: 10,
+    after: 30,
+    suffix: "",
+    unit: "conversions"
+  }
+];
+
+const grid = document.getElementById("comparisonGrid");
+
+performanceData.forEach((item, index) => {
+  const growth = item.before !== 0
+    ? ((item.after - item.before) / item.before) * 100
+    : 0;
+
+  const progress = Math.min(
+    (item.after / (item.after + item.before)) * 100,
+    100
+  );
+
+  const card = document.createElement("div");
+  card.className = "comparison-card";
+
+  card.innerHTML = `
+    <div class="metric-title">${item.title}</div>
+
+    <div class="metric-values">
+      <div class="metric-box">
+        <small>BEFORE</small>
+        <div class="metric-number">
+          ${item.before.toLocaleString("en-IN")}${item.suffix}
+        </div>
+      </div>
+
+      <div class="metric-box after">
+        <small>AFTER</small>
+        <div class="metric-number">
+          ${item.after.toLocaleString("en-IN")}${item.suffix}
+        </div>
+      </div>
+    </div>
+
+    <div class="growth-row">
+      <span class="growth-label">${item.unit}</span>
+      <span class="growth-value">
+        ${growth > 0 ? "+" : ""}${growth.toFixed(0)}%
+      </span>
+    </div>
+
+    <div class="progress-track">
+      <div class="progress-fill" data-width="${progress}%"></div>
+    </div>
+  `;
+
+  grid.appendChild(card);
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll(".progress-fill")
+        .forEach(bar => {
+          bar.style.width = bar.dataset.width;
+        });
+
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".comparison-card")
+  .forEach(card => observer.observe(card));
+</script>
+
+<section class="certifications-section" id="certifications">
+
+  <div class="cert-container">
+
+    <div class="cert-label">09 / PROFESSIONAL DEVELOPMENT</div>
+
+    <div class="cert-heading">
+      <h2>Licenses & <span>Certifications.</span></h2>
+      <p>
+        Continuously upgrading my digital marketing knowledge
+        through professional certifications and practical learning.
+      </p>
+    </div>
+
+    <div class="cert-grid">
+
+      <!-- CERTIFICATE 1 -->
+      <div class="cert-card">
+        <div class="cert-top">
+          <div class="cert-logo itronix">I</div>
+          <span class="cert-icon">✦</span>
+        </div>
+
+        <span class="cert-type">PROFESSIONAL CERTIFICATION</span>
+
+        <h3>Digital Marketing</h3>
+
+        <div class="cert-organization">
+          Itronixsolutions
+        </div>
+
+        <div class="cert-date">
+          <span>ISSUED</span>
+          <strong>June 2025</strong>
+        </div>
+
+        <div class="cert-divider"></div>
+
+        <div class="cert-skills">
+          <span>Digital Marketing</span>
+          <span>SEO</span>
+          <span>Online Marketing</span>
+        </div>
+
+        <a
+          href="https://www.linkedin.com/in/karthik-raja-m-861a15257/overlay/Certifications/933013330/treasury/?profileId=ACoAAD9VH4kBdd7sxhsPZKu9JFG3X0vNPI-w1po"
+          target="_blank"
+          class="cert-link">
+          VIEW CERTIFICATE ↗
+        </a>
+      </div>
+
+      <!-- CERTIFICATE 2 -->
+      <div class="cert-card">
+        <div class="cert-top">
+          <div class="cert-logo stukent">S</div>
+          <span class="cert-icon">✦</span>
+        </div>
+
+        <span class="cert-type">PROFESSIONAL CERTIFICATION</span>
+
+        <h3>Social Media Marketing</h3>
+
+        <div class="cert-organization">
+          Stukent
+        </div>
+
+        <div class="cert-date">
+          <span>ISSUED</span>
+          <strong>March 2024</strong>
+        </div>
+
+        <div class="cert-divider"></div>
+
+        <div class="cert-skills">
+          <span>Poster Design</span>
+          <span>Organic Posts</span>
+          <span>Social Media</span>
+          <span>Content Marketing</span>
+        </div>
+
+        <a
+          href="https://apif.stukent.com/certifications/v1/7c5cd9d2-eeca-4e6d-8163-298d8c148944/fa5f186c-edd0-4df4-a133-4b22fc11c177"
+          target="_blank"
+          class="cert-link">
+          SHOW CREDENTIAL ↗
+        </a>
+      </div>
+
+      <!-- CERTIFICATE 3 -->
+      <div class="cert-card">
+        <div class="cert-top">
+          <div class="cert-logo stukent">S</div>
+          <span class="cert-icon">✦</span>
+        </div>
+
+        <span class="cert-type">PROFESSIONAL CERTIFICATION</span>
+
+        <h3>Search Engine Marketing</h3>
+
+        <div class="cert-organization">
+          Stukent
+        </div>
+
+        <div class="cert-date">
+          <span>ISSUED</span>
+          <strong>November 2023</strong>
+        </div>
+
+        <div class="cert-divider"></div>
+
+        <div class="cert-skills">
+          <span>Keyword Research</span>
+          <span>Budget Management</span>
+          <span>SEM</span>
+        </div>
+
+        <a
+          href="https://apif.stukent.com/certifications/v1/ea1b411e-eca2-4bf5-b581-2a81457ae88f/6ff17e17-5dd3-42c1-bd08-18a705553a3a"
+          target="_blank"
+          class="cert-link">
+          SHOW CREDENTIAL ↗
+        </a>
+      </div>
+
+    </div>
+
+    <div class="cert-footer">
+      <span>ALWAYS LEARNING. ALWAYS EVOLVING.</span>
+      <div class="cert-footer-line"></div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.certifications-section {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  padding: 100px 7%;
+}
+
+.cert-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.cert-label {
+  color: #FF6B00;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.cert-heading {
+  margin: 30px 0 55px;
+  max-width: 750px;
+}
+
+.cert-heading h2 {
+  font-size: clamp(35px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.cert-heading h2 span {
+  color: #FF6B00;
+}
+
+.cert-heading p {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cert-card {
+  background: #171717;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: .35s ease;
+  min-height: 390px;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  border-color: #FF6B00;
+  box-shadow: 0 15px 35px rgba(255,107,0,.08);
+}
+
+.cert-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.cert-logo {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.itronix {
+  background: #292929;
+  color: #FF6B00;
+}
+
+.stukent {
+  background: #FFFFFF;
+  color: #171717;
+}
+
+.cert-icon {
+  color: #FF6B00;
+  font-size: 23px;
+}
+
+.cert-type {
+  color: #FF6B00;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.cert-card h3 {
+  font-size: 21px;
+  margin: 13px 0 8px;
+  line-height: 1.4;
+}
+
+.cert-organization {
+  color: #AAAAAA;
+  font-size: 13px;
+}
+
+.cert-date {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 25px;
+}
+
+.cert-date span {
+  color: #777777;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.cert-date strong {
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+.cert-divider {
+  height: 1px;
+  background: #333333;
+  margin: 20px 0;
+}
+
+.cert-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 25px;
+}
+
+.cert-skills span {
+  background: #251A12;
+  color: #FF8A36;
+  border: 1px solid #49301F;
+  border-radius: 4px;
+  font-size: 10px;
+  padding: 7px 9px;
+}
+
+.cert-link {
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  padding: 13px;
+  border: 1px solid #FF6B00;
+  border-radius: 5px;
+  color: #FF6B00;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.cert-link:hover {
+  background: #FF6B00;
+  color: #FFFFFF;
+}
+
+.cert-footer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #777777;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.cert-footer-line {
+  flex: 1;
+  height: 1px;
+  background: #333333;
+}
+
+@media(max-width: 900px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .certifications-section {
+    padding: 70px 6%;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-heading h2 {
+    font-size: 36px;
+  }
+
+  .cert-card {
+    min-height: auto;
+  }
+}
+</style>
+
+
+<!-- CONTACT -->
+<div class="cta">
+ <div class="container">
+  <h2>Let's Create Something Great.</h2>
+  <p>
+   Open to professional connections, marketing opportunities
+   and conversations about digital growth.
+  </p>
+  <a href="https://www.linkedin.com/in/karthik-raja-m-861a15257/"
+     target="_blank" class="btn">CONNECT ON LINKEDIN ↗</a>
+ </div>
+</div>
+
+<section id="contact">
+ <div class="container">
+  <div class="section-head">
+   <small>07 / CONTACT</small>
+   <h2>Let's Talk.</h2>
+  </div>
+  <div class="contact-grid">
+   <div class="contact-info">
+    <h3>Have a project or opportunity?</h3>
+    <p>Feel free to connect with me for professional discussions and collaborations.</p>
+   </div>
+   <div>
+    <a class="contact-link" href="https://www.linkedin.com/in/karthik-raja-m-861a15257/" target="_blank">
+     <i class="fab fa-linkedin"></i> LinkedIn Profile
+    </a>
+    <a class="contact-link" href="mailto:YOUR_EMAIL@example.com">
+     <i class="fas fa-envelope"></i> Your Email Address
+    </a>
+    <a class="contact-link" href="#home">
+     <i class="fas fa-arrow-up"></i> Back to Top
+    </a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+  © <span id="year"></span> Karthik Raja M. Designed with creativity.
+ </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.querySelectorAll('.nav-links a').forEach(link=>{
+ link.addEventListener('click',()=>{
+  document.getElementById('nav').classList.remove('active');
+ });
+});
+</script>
+
+</body>
+</html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="022f9bff-66a5-460b-b201-56039734a0b7" data-app-host="app.netlify.com" data-account-tier="free"></script>
